@@ -18,7 +18,7 @@ last_updated:
 
 ## People in This Network
 
-- [[Person_Name]]
+- Person_Name
 
 ## Papers
 

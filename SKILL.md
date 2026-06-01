@@ -36,7 +36,7 @@ Use `references/archive_workflow.md` for detailed import and cleanup rules.
 Use a PI-specific map file as the human entry point, but keep graph edges layered:
 
 1. PI map links to people only.
-2. People files link to research directions.
+2. People files record research direction assignments as plain text or frontmatter strings only; do not link to direction files.
 3. People files link to papers only when the person is confirmed or strongly indicated as first author.
 4. Direction files link to per-direction `core.md` and `other.md` link files.
 5. Link files link to paper files.
@@ -55,6 +55,17 @@ Separate people by role when the local project uses role folders:
 - `coauthors/` for collaborators and coauthors
 
 Do not invent advisor-student relationships. Do not upgrade one-time coauthorship into strong collaboration.
+
+Suggested person-card workflow:
+
+1. Search local files first for the normalized name, aliases, and existing paper-node references.
+2. If public identity, affiliation, or role may have changed, verify with web sources before writing stable facts.
+3. Classify conservatively: current RPG, graduated RPG, PI, or coauthor / collaborator.
+4. Use RPG folders only when official supervision, lab / people page, thesis, or similarly strong evidence supports RPG status.
+5. Add first-author paper links in people cards only when existing paper nodes confirm or strongly indicate first authorship.
+6. Add reciprocal first-author links in paper cards when a person card is created.
+7. Update the PI-specific people map and only stable, high-level dashboard notes.
+8. Keep unresolved role / affiliation / collaboration-strength issues in `Uncertainty / To Verify`.
 
 ### Add Directions
 

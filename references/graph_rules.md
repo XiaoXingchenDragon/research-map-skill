@@ -36,7 +36,7 @@ Use layered graph edges:
 
 ```text
 PI-specific map -> people
-people -> directions
+people -> direction names as plain text only
 people -> first-author papers only
 directions -> per-direction core/other link files
 link files -> papers
@@ -56,9 +56,10 @@ The purpose is to prevent overview pages from turning into dense graph hubs.
 
 People files may link to:
 
-- related directions
 - first-author papers only when confirmed or strongly indicated
 - important collaborators when the relationship is evidence-backed
+
+People files must not link to research direction files. Store people-direction assignments as plain text, YAML strings, or table text only.
 
 Separate roles when the project supports subfolders:
 
@@ -70,13 +71,25 @@ Separate roles when the project supports subfolders:
 
 Do not infer advisor-student relationships from coauthorship alone.
 
+When adding a new person card:
+
+1. Search local files first for aliases and existing first-author paper nodes.
+2. Verify public role, affiliation, and RPG status with official or high-confidence sources when those facts may have changed.
+3. Choose the folder conservatively: `pi/`, `rpg/current/`, `rpg/graduated/`, or `coauthors/`.
+4. Use RPG folders only with official supervision, lab / people page, thesis, or similarly strong evidence.
+5. In people cards, link paper nodes only for confirmed or strongly indicated first-author papers; keep other paper mentions as plain text.
+6. Add reciprocal first-author links in paper cards.
+7. Update the PI-specific people map and stable dashboard notes.
+8. Preserve uncertainty about role, affiliation, and collaboration strength.
+
 ## Direction Files
 
-Direction files should link to:
+Direction files should mention:
 
-- people active in the direction
 - its own core link file
 - its own other link file
+
+People active in the direction should be listed as plain text or frontmatter strings, not Obsidian links.
 
 Direction files should not directly list every paper as graph links if the project uses link files. Put paper links inside:
 
