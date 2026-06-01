@@ -22,7 +22,7 @@ last_updated:
 
 ## Research Interests
 
-- Direction_Name
+- [[Direction_Name]]
 
 ## First-Author Papers
 

@@ -36,7 +36,7 @@ Use `references/archive_workflow.md` for detailed import and cleanup rules.
 Use a PI-specific map file as the human entry point, but keep graph edges layered:
 
 1. PI map links to people only.
-2. People files record research direction assignments as plain text or frontmatter strings only; do not link to direction files.
+2. People files link to research directions.
 3. People files link to papers only when the person is confirmed or strongly indicated as first author.
 4. Direction files link to per-direction `core.md` and `other.md` link files.
 5. Link files link to paper files.

@@ -36,7 +36,7 @@ Use layered graph edges:
 
 ```text
 PI-specific map -> people
-people -> direction names as plain text only
+people -> directions
 people -> first-author papers only
 directions -> per-direction core/other link files
 link files -> papers
@@ -56,10 +56,9 @@ The purpose is to prevent overview pages from turning into dense graph hubs.
 
 People files may link to:
 
+- related directions
 - first-author papers only when confirmed or strongly indicated
 - important collaborators when the relationship is evidence-backed
-
-People files must not link to research direction files. Store people-direction assignments as plain text, YAML strings, or table text only.
 
 Separate roles when the project supports subfolders:
 
@@ -84,12 +83,11 @@ When adding a new person card:
 
 ## Direction Files
 
-Direction files should mention:
+Direction files should link to:
 
+- people active in the direction
 - its own core link file
 - its own other link file
-
-People active in the direction should be listed as plain text or frontmatter strings, not Obsidian links.
 
 Direction files should not directly list every paper as graph links if the project uses link files. Put paper links inside:
 
