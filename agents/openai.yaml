@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Map"
+  short_description: "Reusable PI research maps."
+  default_prompt: "Use research-map to archive a PI report, update people/directions/papers, or generate the next Deep Research prompt."
